@@ -4,6 +4,7 @@ nav {
     display: flex;
     align-items: center;
     border-bottom: solid 1px;
+    font-family: "Roboto", sans-serif;
 }
 
 .logo {
@@ -33,6 +34,7 @@ nav {
     padding-right: 15px;
     border-bottom: solid 1px;
     display: flex;
+    font-family: "Spectral", serif;
 }
 
 .container-nav h1 {
@@ -65,7 +67,6 @@ nav {
     /* Nascondi l'SVG quando la larghezza dello schermo è 768px o meno */
     .m {
         display: none;
-        /* Nasconde l'SVG */
     }
 }
 
@@ -80,6 +81,7 @@ nav {
 /* TRENDING */
 
 .trending {
+    font-family: "Roboto", sans-serif;
     padding: 20px;
     border-bottom: solid 1px grey;
 }
@@ -142,8 +144,9 @@ nav {
     height: 20px;
 }
 
-/* TRENDING */
+/* DISCOVER */
 .container-discover {
+    font-family: "Roboto", sans-serif;
     margin-top: 40px;
     margin-left: 20px;
 }
@@ -177,6 +180,7 @@ nav {
 /* CARD */
 
 .card-menu {
+    font-family: "Roboto", sans-serif;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -188,11 +192,14 @@ nav {
 }
 
 .card-container {
+    font-family: "Roboto", sans-serif;
     padding: 20px;
 }
 
 .card {
     display: flex;
+    margin-top: 20px;
+    align-items: center;
 }
 
 .card-user {
@@ -202,6 +209,7 @@ nav {
 
 .card-user p {
     font-weight: 700;
+    margin-left: 8px;
 }
 
 .card-user img {
@@ -217,6 +225,7 @@ nav {
 
 .card-img {
     width: 170px;
+    margin-left: 10px;
 }
 
 .card-time-container {
