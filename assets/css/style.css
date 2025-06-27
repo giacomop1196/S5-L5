@@ -6,6 +6,10 @@ nav {
     border-bottom: solid 1px;
     font-family: "Roboto", sans-serif;
     justify-content: space-between;
+    position: fixed; 
+    top: 0;         
+    width: 100%;     
+    z-index: 1000;  
 }
 
 /* Media Query Navbar */
@@ -13,6 +17,11 @@ nav {
     nav {
         padding: 2%;
     }
+}
+
+.scrolled-nav {
+    background-color: #ffffff;
+    color: black;
 }
 
 .logo {
@@ -27,6 +36,18 @@ nav {
     padding-right: 20px;
     border-radius: 50px;
     margin-left: 10px;
+    margin-right: 50px;
+}
+
+.scrolled-button {
+    background-color: #538624;
+    color: white;
+}
+
+
+.button-nav:hover {
+    background-color: rgb(212, 211, 211);
+    color: black;
 }
 
 .link-nav {
@@ -45,6 +66,8 @@ nav {
     display: flex;
     font-family: "Spectral", serif;
     justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
 }
 
 /* Media Query Container Nav */
@@ -54,6 +77,18 @@ nav {
         align-items: center;
         padding-top: 0;
         padding-bottom: 0;
+        margin-top: 70px;
+    }
+}
+
+/* Media Query Container Nav */
+@media (min-width: 800px) {
+    .container-nav {
+        padding-left: 130px;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 20px;
+        margin-top: 50px;
     }
 }
 
@@ -83,6 +118,11 @@ nav {
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 50px;
+}
+
+.container-nav a:hover {
+    color: black;
+    background-color: white;
 }
 
 .m {
@@ -229,7 +269,7 @@ nav {
 
 @media (min-width: 768px) {
     #discover {
-       width: 500px;
+       width: 600px;
     }
 }
 
@@ -287,6 +327,7 @@ nav {
     padding: 20px;
     order: 1;
     flex-grow: 1;
+    width: 90%;
 }
 
 
@@ -295,6 +336,7 @@ nav {
     display: flex;
     margin-top: 20px;
     align-items: center;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -336,6 +378,13 @@ nav {
     align-items: center;
 }
 
+.card > div:first-child { 
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
 .card-time {
     display: flex;
     align-items: center;
@@ -355,4 +404,20 @@ nav {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 50px;
+}
+
+@media (min-width: 768px) {
+    #text-mobile {
+       display: none;
+    }
+}
+
+#text-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #text-desktop {
+       display: block;
+    }
 }
