@@ -5,6 +5,14 @@ nav {
     align-items: center;
     border-bottom: solid 1px;
     font-family: "Roboto", sans-serif;
+    justify-content: space-between;
+}
+
+/* Media Query Navbar */
+@media (min-width: 769px) {
+    nav {
+        padding: 2%;
+    }
 }
 
 .logo {
@@ -24,6 +32,7 @@ nav {
 .link-nav {
     color: black;
     margin-left: auto;
+    margin-right: 5px;
 }
 
 .container-nav {
@@ -35,12 +44,31 @@ nav {
     border-bottom: solid 1px;
     display: flex;
     font-family: "Spectral", serif;
+    justify-content: space-between;
 }
+
+/* Media Query Container Nav */
+@media (min-width: 769px) {
+    .container-nav {
+        padding-left: 130px;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
 
 .container-nav h1 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+/* Media Query Titolo */
+@media (min-width: 769px) {
+    .container-nav h1 {
+        font-size: 100px;
+    }
 }
 
 .container-nav p {
@@ -61,10 +89,9 @@ nav {
     display: block;
 }
 
-/* Media Query per schermi piccoli (mobile) */
+/* Media Query SVG */
 @media (max-width: 768px) {
 
-    /* Nascondi l'SVG quando la larghezza dello schermo è 768px o meno */
     .m {
         display: none;
     }
@@ -80,15 +107,41 @@ nav {
 
 /* TRENDING */
 
+.article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+/* Media Query Articoli in griglia */
+
+@media (max-width: 768px) {
+    .article {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+
 .trending {
     font-family: "Roboto", sans-serif;
     padding: 20px;
     border-bottom: solid 1px grey;
 }
 
+@media (min-width: 768px) {
+    .trending {
+        padding-top: 50px;
+        padding-left: 130px;
+        padding-right: 130px;
+        padding-top: 50px;
+    }
+}
+
 .trending-number {
-    color: grey;
-    font-size: large;
+    color: #d5d4d4;
+    font-size: x-large;
     font-weight: 800;
 }
 
@@ -136,8 +189,26 @@ nav {
     justify-content: space-between;
     margin-top: 10px;
     color: grey;
+    align-items: center;
 }
 
+.trending-article-time p {
+    margin-right: 5px;
+}
+
+/* Media Query Article Time */
+@media (min-width: 768px) {
+    .trending-article-time {
+        justify-content: start;
+    }
+}
+
+/* Media Query Article Star */
+@media (max-width: 768px) {
+    #star {
+        display: none;
+    }
+}
 
 .trending-article img {
     border-radius: 100%;
@@ -149,6 +220,17 @@ nav {
     font-family: "Roboto", sans-serif;
     margin-top: 40px;
     margin-left: 20px;
+}
+
+#discover {
+    order: 2;
+}
+
+
+@media (min-width: 768px) {
+    #discover {
+       width: 500px;
+    }
 }
 
 .discover-title {
@@ -177,6 +259,15 @@ nav {
     color: white;
 }
 
+@media (min-width: 768px) {
+    #section-card {
+        display: flex;
+        padding-left: 130px;
+        padding-right: 130px;
+        align-items: flex-start;
+    }
+}
+
 /* CARD */
 
 .card-menu {
@@ -194,12 +285,23 @@ nav {
 .card-container {
     font-family: "Roboto", sans-serif;
     padding: 20px;
+    order: 1;
+    flex-grow: 1;
 }
+
+
 
 .card {
     display: flex;
     margin-top: 20px;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    .card {
+       justify-content: space-between;
+       margin-right: 70px;
+    }
 }
 
 .card-user {
